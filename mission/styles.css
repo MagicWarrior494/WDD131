@@ -1,0 +1,40 @@
+html {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content{
+    border: 1px solid black;
+    max-width: 600px;
+    justify-self: center;
+    padding: 0% 10%;
+}
+
+header{
+    justify-self: center;
+    justify-items: center;
+}
+
+main{
+    align-items: left;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+h2 {
+    text-align: center;
+    min-width: 700px;
+    color: #006EB6;
+    border-bottom: 1px solid lightgray;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+footer{
+    padding: 50px 0px;
+    justify-self: center;
+    justify-items: center;
+}
+.logo{
+    width: 150px;
+}

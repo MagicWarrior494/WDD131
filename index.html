@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Matthew: WDD131 Portfolio</title>
-    <meta name="description" content="My personal porftolio">
+    <meta name="description" content="My personal portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Matthew Foushee">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 <body>
-    <h1>Welcome to WDD130 Web Projects</h1>
-<nav>
-  <a href="Aboutme/index.html">About Me Page</a>             
- <a href="#">Personal Website</a>
-  <a href="#">Personal Siteplan</a>
-</nav>
+  <nav>
+    <h2><a href="#" id="homeBtn">Menu</a></h2>
+    <div class="items">
+      <div class="nav-item">
+        <a href="Aboutme/index.html" class="nav-link" data-target="iframe">About Me Page</a>
+        <a href="Aboutme/index.html" class="redirect-btn" target="_self" title="Open page normally">&#x2197;</a>
+      </div>
+      <div class="nav-item">
+        <a href="mission/index.html" class="nav-link" data-target="iframe">Mission Statement</a>
+        <a href="mission/index.html" class="redirect-btn" target="_self" title="Open page normally">&#x2197;</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="welcome">
+      <h1>Welcome to WDD130 Web Projects</h1>
+      <p>Select a page from the menu to load it here.</p>
+    </div>
+
+    <iframe name="contentFrame"></iframe>
+  </div>
+
+  <script src="scripts/index.js"></script>
 </body>
-
-
 </html>
-
 <!--https://magicwarrior494.github.io/WDD131/-->

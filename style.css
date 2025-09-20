@@ -1,0 +1,164 @@
+/* ================= GLOBAL STYLES ================= */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #f8f5e1;
+    background: linear-gradient(135deg, #3b2f2f, #1e1a1a);
+}
+
+body {
+    display: flex;
+}
+
+/* ================= NAVIGATION ================= */
+nav {
+    width: 260px;               /* Wider nav */
+    height: 100vh;
+    background: #2a1f1d;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.6);
+    border-right: 3px solid #6b4e24;
+    box-sizing: border-box;
+}
+
+nav h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+nav h2 a {
+    text-decoration: none;
+    color: #c9a66b;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+nav h2 a:hover {
+    color: #e2c290;
+}
+
+/* ---------------- NAV ITEMS ---------------- */
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 10px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a.nav-link {
+    flex: 1 1 auto;              /* Main link grows */
+    padding: 0.3rem 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    color: #f8f5e1;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-item a.nav-link:hover {
+    background: rgba(201, 166, 107, 0.15);
+    padding-left: 30px;
+    color: #e2c290;
+}
+
+.nav-item a.nav-link.active {
+    background: rgba(201, 166, 107, 0.25);
+    color: #e2c290;
+}
+
+/* ---------------- REDIRECT BUTTON ---------------- */
+.nav-item .redirect-btn {
+    flex: 0 0 auto;               /* Do not grow or shrink */
+    width: 24px;
+    height: 24px;
+    margin-left: 0.3rem;
+    font-size: 0.9rem;
+    line-height: 24px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    background: #f8f5e1;           /* Optional for visibility */
+    display: flex;                  /* Center the arrow */
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.nav-item .redirect-btn:hover {
+    background-color: #eee;
+}
+
+/* ================= CONTENT ================= */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow-y: auto;
+    background: #1e1a1a;
+    position: relative;
+}
+
+/* ---------------- WELCOME ---------------- */
+.welcome {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    min-height: 0;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1e1a1a;
+    z-index: 10;
+}
+
+.welcome.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.welcome h1 {
+    color: #e2c290;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/* ---------------- IFRAME ---------------- */
+.content iframe {
+    flex: 1;
+    width: 100%;
+    border: none;
+    background: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.content iframe.visible {
+    opacity: 1;
+}
