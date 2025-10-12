@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Matthew Foushee">
         <link rel="stylesheet" href="coolpics.css" type="text/css">
-        <script src="coolpics.css" defer></script>
+        <script src="coolpics.js" defer></script>
     </head>
 
     
@@ -15,7 +15,7 @@
        <header>
         <h1>Cool Pics 📷</h1>
         <button class="menuButton">Menu</button>
-        <nav>
+        <nav id="nav" class="hide">
             <a href="index.html">Home</a>
             <a href="people.html">People</a>
             <a href="places.html">Places</a>
@@ -23,7 +23,10 @@
             <a href="contact.html">Contact</a>
             
         </nav>
-        
+        <dialog id="dialog">
+            <img class="model-img" src="" alt="">
+            <button class="close-viewer">X</button>
+        </dialog>
         </header>
         <main>
             <h1>Current Work</h1>
