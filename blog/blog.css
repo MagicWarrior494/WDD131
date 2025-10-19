@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: #473144;
+}
+
+.site-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+    text-transform: uppercase;
+    font-family: 'Lora', Impact, serif;
+}
+
+header {
+    border-top: 4px solid #EFC69B;
+    border-bottom: 4px solid #EFC69B;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 10px 12%;
+
+    background-color: #fafafa;
+}
+
+header button {
+    color: #AF1B3F;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header button:hover {
+    color: goldenrod;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.book-list {
+    flex: 3;
+}
+.book {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+}
+.book-meta {
+    width: 150px;
+    text-align: center;
+    border-right: 2px solid black;
+    padding-right: 10px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.book-content {
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-content h3 {
+    color: #AF1B3F;
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Lora', Impact, serif;
+}
+
+.book-content img {
+    width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.book-content p {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #444;
+    max-width: 300px;
+}
+
+.sidebar {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
