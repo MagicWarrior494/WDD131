@@ -26,25 +26,25 @@
             height="55px">
             <div class="cardNumber">
                 <label for="cardNumber" id="cardNumberLabel">CARD NUMBER:</label>
-                <input type="text" id="cardNumber" maxlength="16" placeholder="1234 5678 9012 3456"/>
+                <input type="number" id="cardNumber" maxlength="16" placeholder="1234 5678 9012 3456" required/>
             </div>
             <div class="cardHolder">
                 <label for="cardHolder" id="cardHolderLabel">CARDHOLDER NAME:</label>
-                <input type="text" id="cardHolder" maxlength="30" placeholder="John Doe"/>
+                <input type="text" id="cardHolder" maxlength="30" placeholder="John Doe" required/>
             </div>
 
             <div class="exiration">
                 <label for="expiryMonth" id="expiryLabel">EXPIRATION:</label>
                 <div class="expireInputs">
-                    <input type="text" id="expiryMonth" maxlength="2" placeholder="MM"/>
-                    <input type="text" id="expiryYear" maxlength="2" placeholder="YY"/>
+                    <input type="number" id="expiryMonth" maxlength="2" placeholder="MM" required/>
+                    <input type="number" id="expiryYear" maxlength="2" placeholder="YY" required/>
                 </div>
             </div>
         </div>
         <div id="cardBack">
             <div class="cvv">
                 <label for="cvv" id="cvvLabel">CVC/CVV</label>
-                <input type="text" id="cvv" maxlength="3" placeholder="xxx"/>
+                <input type="number" id="cvv" maxlength="3" placeholder="xxx" required/>
             </div>
         </div>
         <button id="submit">Submit</button>
