@@ -15,7 +15,7 @@
         <meta name="twitter:card" content="https://magicwarrior494.github.io/WDD131/recipes/images/recipe-book.png">
 
         <link rel="stylesheet" href="recipes.css" type="text/css">
-        <script src="recipes.js" defer></script>
+        <script src="main.js" type="module" defer></script>
     </head>
 
     <body>
@@ -32,26 +32,9 @@
                 <input type="text" id="search-bar" placeholder="Find a recipe">
                 <button type="submit" id="search-button">🔍</button>
             </form>
-
-                <div class="recipe">
-                    <a href="#"><img src="images/apple-crisp.jpg" alt="Apple Crisp" fetchpriority=high></a>
-                    <div class="recipe-content">
-                        <span class="category">dessert</span>
-
-                        <h2>Apple Crisp</h2>
-
-                        <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                            <span aria-hidden="true" class="icon-star-empty">☆</span>
-                        </span>
-
-                        <p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-
-                    </div>
-                </div>
+            <div id="recipes-container">
+                
+            </div>
         </main>
         <footer>
             <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>

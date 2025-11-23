@@ -91,7 +91,7 @@ header {
     margin-bottom: 10px;
 }
 
-.category {
+.category li{
     display: inline-block;
     border: 1px solid black;
     padding: 3px 8px;
